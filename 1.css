@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: "IranSans";
+    src:
+      url("fonts/IranSans.woff2") format("woff2"),
+      url("fonts/IranSans.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "Vazir.ttf";
+    src: url("../assets/Vazir.ttf"),
+    url("../assets/Vazir.otf");
+}
+
+body {
+    background-color: rgb(24, 33, 33);
+    color: aqua;
+    font-family: arial;
+    font-size: 16px;
+    margin: 10px 35px 20px 35px;
+}
+
+.textdecor:is(h1) {
+    font-weight: 700;
+    margin: 40px 1px;
+    /*  [top,right,bottom,left]
+        [top,right,bottom the left will be equal to right]
+        [topbottom,rightleft] */
+    font-size: 36px;
+}
+
+.textdecor {
+    font-family: segoe UI;
+    text-decoration: none;
+    list-style: none;
+    padding: unset;
+}
+
+#navbar {
+    margin-bottom: 50px;
+}
+
+#navbartext {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.single-line {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* [ellipsis,clip,string] */
+}
+
+/* border: width style(dotted-dashed-solid-double-groove-ridge) color */
