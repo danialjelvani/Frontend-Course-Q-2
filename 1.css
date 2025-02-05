@@ -64,3 +64,38 @@ a {
 }
 
 /* border: width style(dotted-dashed-solid-double-groove-ridge) color */
+
+input:focus {
+    outline-color: #ff0000;
+    background-color: #d13a3a;
+    color: aqua;
+}
+
+label {
+    font-size: 0.9rem;
+    line-height: 150%;
+}
+/*
+it does it for 1 input element:
+
+document.querySelector("input").addEventListener("focus", function (e) {
+    e.target.style.backgroundColor = "#d7c2c2"; // Set color on focus
+});
+
+document.querySelector("input").addEventListener("blur", function (e) {
+    e.target.style.backgroundColor = "#d7c2c2"; // Reset color when losing focus
+});
+
+it does it for multiple input element:
+
+document.querySelectorAll("input").forEach(input => {
+    input.addEventListener("focus", function (e) {
+        e.target.style.backgroundColor = "#d7c2c2";
+    });
+
+    input.addEventListener("blur", function (e) {
+        e.target.style.backgroundColor = "#d7c2c2";
+    });
+});
+
+*/
