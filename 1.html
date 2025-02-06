@@ -27,21 +27,87 @@
             </nav>
 
 
-            <p class="single-line">This is a long text that will be truncated with an ellipsis...</p>
+            <p class="single-line" id="pseudoP">This is a long text that will be truncated with an ellipsis...</p>
 
             <label for="focus">Enter Name:</label><br>
-            <input type="text" id="focus">
+            <input type="text" id="focus"><br><br>
 
 
 
 
         </header>
 
+        <main>
+
+            <label for="test" id="testtext">Test Hover & Active: </label><br>
+            <button type="button" id="test" class="test">Test Button</button><br><br>
+
+            <ul style="display: unset;">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+            </ul>
+
+            <div class="box1">z-index lower</div>
+            <div class="box2">z-index higher</div><br>
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+            <button id="openModal" class="open-modal-btn" style="width: 150px;">Flight Reservation</button>
+
+            <div id="bookingModal" class="modal">
+                <div class="modal-content">
+                    <button class="close-btn">&times;</button>
+                    <h2 style="color: black;">Flight Class:</h2>
+
+                    <form class="flight-class-form">
+                        <label class="radio-container">
+                            <input type="radio" name="class" value="economy" checked>Economy
+                        </label>
+                        <br>
+                        <label class="radio-container">
+                            <input type="radio" name="class" value="business">Business
+                        </label>
+                        <br>
+                        <label class="radio-container">
+                            <input type="radio" name="class" value="first">First Class
+                        </label>
+                        <br>
+                        <label class="radio-container">
+                            <input type="radio" name="class" value="premium" disabled>Premium(disabled)                        </label>
+                    </form>
+
+                    <button class="search-btn">Search Flight</button>
+                </div>
+            </div>
 
 
 
 
 
-        <script src="" async defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+        <script src="1.js" async defer></script>
     </body>
 </html>
