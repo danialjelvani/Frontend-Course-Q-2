@@ -81,15 +81,129 @@
                 </div>
             </div>
 
+            <img src="1.jpg" alt="picture1" class="background">
 
+            <img src="1.jpg" alt="picture2" class="centered"><br>
 
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="./photos/photo1.jpg" alt="photomain">
+                </div>
+                <div class="thumbnails">
+                    <img src="./photos/photo1.jpg" alt="photo1" onclick="changeImage('./photos/photo1.jpg')" width="60px">
+                    <img src="./photos/photo2.jpg" alt="photo2" onclick="changeImage('./photos/photo2.jpg')" width="60px">
+                    <img src="./photos/photo3.jpg" alt="photo3" onclick="changeImage('./photos/photo3.jpg')" width="60px">
+                    <img src="./photos/photo4.jpg" alt="photo4" onclick="changeImage('./photos/photo4.jpg')" width="60px">
+                </div>
+            </div><br>
 
+            <div class="container1">
+                <h1>
+                  this is h1 title
+                </h1>
+                <p>
+                  this is p element
+                </p>
+            </div>
 
+            <div class="container2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+            </div><br><br><br>
 
+<!--   1st display Grid & flex  -->
 
+            <div class="container3">
+                <div class="filter">
+                    <h3> Filter by Brand:</h3>
+                    <div class="checkboxes"> <!-- ✅ Correct wrapper class -->
+                        <label class="checkbox-label"><input type="checkbox" value="Dell"><span>Dell</span></label>
+                        <label class="checkbox-label"><input type="checkbox" value="HP"><span>HP</span></label>
+                        <label class="checkbox-label"><input type="checkbox" value="Apple"><span>Apple</span></label>
+                        <label class="checkbox-label"><input type="checkbox" value="Asus"><span>Asus</span></label>
+                    </div>
+                </div>
 
+                <div class="products">
+                    <div class="product-card" data-brand="Asus">
+                        <img src="assets/image/asus.jpg" alt="Asus Zenbook Pro Duo 14">
+                        <h4>14.5 Zenbook Pro Duo 14 UX8402VU</h4>
+                        <p>800 $</p>
+                    </div>
+                    <div class="product-card" data-brand="Apple">
+                        <img src="assets/image/apple.jpg" alt="MacBook Pro">
+                        <h4>  14.2  MacBook Pro MRX33 2023-M3</h4>
+                        <p>850 $</p>
+                    </div>
+                    <div class="product-card" data-brand="HP">
+                        <img src="assets/image/hp.jpg" alt="HP Laptop">
+                        <h4>  15.6  fd0336-i3 1315U 4GB 256SSD</h4>
+                        <p>500 $</p>
+                    </div>
+                    <div class="product-card" data-brand="Dell">
+                        <img src="assets/image/dell.jpg" alt="Dell Latitude">
+                        <h4>  14  latitude 3410 ci</h4>
+                        <p>450 $</p>
+                    </div>
+                    <div class="product-card" data-brand="Apple">
+                        <img src="assets/image/air.jpg" alt="MacBook Air">
+                        <h4>  15.3  MacBook Air MQKW3 M2 2023</h4>
+                        <p>750 $</p>
+                    </div>
+                </div>
+            </div><br><br>
 
+<!--   2nd display Grid & Grid  -->
 
+            <div class="container3">
+                <div class="filter">
+                    <h3> Filter by Brand:</h3>
+                    <div class="checkboxes2"> <!-- ✅ Correct wrapper class -->
+                        <label class="checkbox-label2"><input type="checkbox" value="Dell"><span>Dell</span></label>
+                        <label class="checkbox-label2"><input type="checkbox" value="HP"><span>HP</span></label>
+                        <label class="checkbox-label2"><input type="checkbox" value="Apple"><span>Apple</span></label>
+                        <label class="checkbox-label2"><input type="checkbox" value="Asus"><span>Asus</span></label>
+                    </div>
+                </div>
+
+                <div class="products2">
+                    <div class="product-card2" data-brand="Asus">
+                        <img src="assets/image/asus.jpg" alt="Asus Zenbook Pro Duo 14">
+                        <h4>14.5 Zenbook Pro Duo 14 UX8402VU</h4>
+                        <p>800 $</p>
+                    </div>
+                    <div class="product-card2" data-brand="Apple">
+                        <img src="assets/image/apple.jpg" alt="MacBook Pro">
+                        <h4>  14.2  MacBook Pro MRX33 2023-M3</h4>
+                        <p>850 $</p>
+                    </div>
+                    <div class="product-card2" data-brand="HP">
+                        <img src="assets/image/hp.jpg" alt="HP Laptop">
+                        <h4>  15.6  fd0336-i3 1315U 4GB 256SSD</h4>
+                        <p>500 $</p>
+                    </div>
+                    <div class="product-card2" data-brand="Dell">
+                        <img src="assets/image/dell.jpg" alt="Dell Latitude">
+                        <h4>  14  latitude 3410 ci</h4>
+                        <p>450 $</p>
+                    </div>
+                    <div class="product-card2" data-brand="Apple">
+                        <img src="assets/image/air.jpg" alt="MacBook Air">
+                        <h4>  15.3  MacBook Air MQKW3 M2 2023</h4>
+                        <p>750 $</p>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -108,6 +222,6 @@
 
 
 
-        <script src="1.js" async defer></script>
+        <script src="1.js" defer></script>
     </body>
 </html>
