@@ -465,3 +465,53 @@ was created. example: flex-flow: row wrap */
     color: #ffffff;
     margin: 0;
 }
+
+/* When grid-column-start is used alone, the grid item by default will
+span exactly one column. However, you can extend the item across
+multiple columns by adding the grid-column-end property.
+
+Instead of defining a grid item based on the start and end positions
+of the grid lines, you can define it based on your desired column width
+using the span keyword. Keep in mind that span only works with positive values.
+For example, water these carrots with the rule grid-column-end: span 2
+
+grid-column is a shorthand property that can accept both values at once, separated by a slash.
+
+For example, grid-column: 2 / 4; will set the grid item to start on the 2nd
+vertical grid line and end on the 4th grid line.
+grid-column: 2 / span 3
+
+grid-area accepts four values separated by slashes: grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end.
+
+One example of this would be grid-area: 1 / 1 / 3 / 6
+
+For example, we previously defined five 20% columns with the rule
+grid-template-columns: 20% 20% 20% 20% 20%;. This can be simplified as
+grid-template-columns: repeat(5, 20%)
+
+grid-template is a shorthand property that combines grid-template-rows and grid-template-columns.
+
+For example, grid-template: 50% 50% / 200px; will create a grid with
+two rows that are 50% each, and one column that is 200 pixels wide.*/
+
+
+
+/* view & compare different width sizes:
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/length
+*/
+
+/* multi column container */
+
+.multicolumn-container {
+    background-color: #000000ae;
+    padding: 50px;
+    border-radius: 10px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px dotted rgba(255, 166, 0, 0.356);
+}
+
+.multicolumn-container h2 {
+    column-span:all;
+}
