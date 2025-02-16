@@ -501,6 +501,9 @@ two rows that are 50% each, and one column that is 200 pixels wide.*/
 https://developer.mozilla.org/en-US/docs/Web/CSS/length
 */
 
+
+
+
 /* multi column container */
 
 .multicolumn-container {
@@ -513,5 +516,37 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/length
 }
 
 .multicolumn-container h2 {
-    column-span:all;
+    column-span: all;
 }
+
+
+/* @media [screen, print, speech]
+Example for large screens: @media screen and (min-width: 700px), (orientation: landscape) { ... }
+[,=Or and=AND only=ONLY not=NOT] */
+
+
+/* outline is like border but outside the bborder & element:
+it takes values just like border:
+outline: 1px dotted red; */
+
+
+
+/* box shadow:
+
+[ <'offset-x'> || <'offset-y'> || <'blur-radius'> || ‌<'spread-radius'> || <'color'> ]
+box-shadow: 2px 2px 0 5px rgba(0, 0, 0, 0.11);
+
+<inset>
+Changes the shadow from an outer box-shadow to an inner box-shadow
+(as if the content is pressed into the box).
+
+In this example, we include three shadows:
+an inset shadow, a regular drop shadow, and a 2px shadow
+that creates a border effect
+(we could have used an outline instead for that third shadow).
+
+  box-shadow:
+    inset 0 -3em 3em rgb(0 200 0 / 30%),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%);
+*/
